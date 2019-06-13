@@ -1,0 +1,471 @@
+﻿<?php include('functions.php') ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sigurnost u saobraćaju</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Sigurnost u saobraćaju" />
+
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<!--<link href="//fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Mallanna" rel="stylesheet">-->
+</head>
+
+<body>
+	<!--Header-->
+	<div class="top-bar_sub_w3layouts_agile">
+		<h6>SIGURNOST U SAOBRAĆAJU <a href="contact.html">Contact Us </a></h6>
+		<div class="search">
+			<h5><a class="sign" href="#" data-toggle="modal" data-target="#myModal2">Login</a></h5>
+			<div class="cd-main-header">
+				<ul class="cd-header-buttons">
+					<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+				</ul>
+				<!-- cd-header-buttons -->
+			</div>
+			<div id="cd-search" class="cd-search">
+				<form action="#" method="post">
+					<input name="Search" type="search" placeholder="Pritisnite enter nakon kucanja...">
+				</form>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="header" id="home">
+
+		<!--/top-bar-->
+		<div class="top-bar">
+			<div class="header-nav-agileits">
+
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<img src ="images/logo.png" width="100px" height="95px">
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<nav>
+							<ul class="top_nav">
+								<li><a href="index.html" class="active">Početna</a></li>
+								<li><a href="about.html">O nama</a></li>
+								
+								<li><a href="contact.html">Kontakt</a></li>
+							</ul>
+						</nav>
+					</div>
+				</nav>
+
+			</div>
+		</div>
+		<!--//top-bar-->
+		<!-- banner-text -->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="banner-top">
+							<div class="banner-info-w3ls-agileinfo">
+								<h3>Sigurnosni pojas spašava život!</h3>
+								
+								
+							</div>
+
+						</div>
+					</li>
+					<li>
+						<div class="banner-top1">
+							<div class="banner-info-w3ls-agileinfo">
+								<h3>Smanji brzinu, produži život!</h3>
+								
+							</div>
+
+						</div>
+					</li>
+					<li>
+						<div class="banner-top2">
+							<div class="banner-info-w3ls-agileinfo">
+								<h3>Alkohol i vožnja ne idu zajedno.</h3>
+								
+							</div>
+
+						</div>
+					</li>
+					<li>
+						<div class="banner-top3">
+							<div class="banner-info-w3ls-agileinfo">
+								<h3>Koristimo autosjedalice!</h3>
+								
+							</div>
+
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+
+			<!--banner Slider starts Here-->
+		</div>
+		<!--//Slider-->
+	</div>
+	<!-- Modal1 -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+					<div class="signin-form profile">
+
+
+						<div class="login-m_page">
+							<h3 class="sign">Sign In</h3>
+							<div class="login-form-wthree-agile">
+							<form method="post" action="login.php">
+
+								<?php echo display_error(); ?>
+
+								
+									<input type="username" name="username" placeholder="Username" required="">
+									<input type="password" name="password" placeholder="Password" required="">
+									<div class="tp">
+										<input  type="submit" class="btn" name="login_btn" value="Sign In">
+									</div>
+								</form>
+							</div>
+							<div class="login-social-grids">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+							<p><a href="#" data-toggle="modal" data-target="#myModal3"> Nemate račun? Registruj se!</a></p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal1 -->
+	<!-- Modal2 -->
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+					<div class="signin-form profile">
+
+						
+						<div class="login-m_page">
+							<h3 class="sign">Sign Up</h3>
+							<div class="login-form-wthree-agile">
+								<form method="post" action="register.php">
+								<?php echo display_error(); ?>
+									<input type="text" name="username"   placeholder="Username" required=""> <?php echo $username;?>
+									<input type="email" name="email"   placeholder="Email" required=""><?php echo $email; ?>
+									<input type="password" name="password_1" placeholder="Password" required="">
+									<input type="password" name="password_2" placeholder="Confirm Password" required="">
+									<input type="submit" class="btn" name="register_btn" value="Sign Up">
+								</form>
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal2 -->
+
+	<!--//Header-->
+	<!--/banner_bottom-->
+	<div class="banner_bottom">
+		<div class="banner_bottom_in">
+			<h3 class="headerw3">Sigurnost je u našim rukama.</h3>
+
+			<p>Svjedoci smo svakodnevnih vijesti o saobraćajnim nesrećama koje nerijetko prođu bez žrtava i teško ozlijeđenih osoba. 
+			Česti kolapsi saobraćaja, svakodnevne gužve, nervoza vozača i neuslovne ceste, dodatno ugrožavaju sigurnost saobraćaja.
+			</p>
+
+			<div class="edu_button">
+				<a class="btn btn-primary btn-lg" href="#" role="button"> Više </a>
+			</div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/nUPfD_FobwM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			
+		</div>
+	</div>
+	
+	<!--//what-we-do-->
+	<div class="tesimonials">
+		<div class="container">
+			<h3 class="headerw3 two">Savjeti</h3>
+			<div class="inner_sec_w3_agileinfo">
+				<div class="test_grid_sec">
+					<div class="col-md-offset-2 col-md-8">
+						<div class="carousel slide two" data-ride="carousel" id="quote-carousel">
+							<!-- Bottom Carousel Indicators -->
+							<ol class="carousel-indicators two">
+								<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#quote-carousel" data-slide-to="1"></li>
+								<li data-target="#quote-carousel" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Carousel Slides / Quotes -->
+							<div class="carousel-inner">
+
+								<!-- Quote 1 -->
+								<div class="item active">
+									<blockquote>
+										<div class="test_grid">
+											<div class="col-sm-3 text-center test_img">
+												<i class="fa fa-user" aria-hidden="true"></i>
+
+											</div>
+											<div class="col-sm-9 test_img_info">
+												<p>"Većina žrtava su mladići i dječaci. Muškarci mlađi do 25 godina gotovo su na trostruko 
+												većem riziku da će poginuti u saobraćajnoj nesreći u odnosu na žene iste starosne dobi.”</p>
+												
+											</div>
+										</div>
+									</blockquote>
+								</div>
+								<!-- Quote 2 -->
+								<div class="item">
+									<blockquote>
+										<div class="test_grid">
+											<div class="col-sm-3 text-center test_img">
+												<i class="fa fa-user" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-9 test_img_info">
+												<p>“Kako dolazi do smanjenja broja infekcija, tako vidimo sve više smrtnih 
+												slučajeva od ozljeda širom svijeta, a saobraćajne nesreće predstavljaju glavni uzrok.”</p>
+												
+											</div>
+										</div>
+									</blockquote>
+								</div>
+								<!-- Quote 3 -->
+								<div class="item">
+									<blockquote>
+										<div class="test_grid">
+											<div class="col-sm-3 text-center test_img">
+												<i class="fa fa-user" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-9 test_img_info">
+												<p>Posmatrajući saobraćajne nezgode, prema broju poginulih i povrijeđenih učesnika
+												najugroženija kategorija su bili vozači. Spriječimo neželjena iskustva!"</p>
+												
+												
+											</div>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- bootstrap-modal-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					Luscious
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<img src="images/model.jpg" alt=" " class="img-responsive" />
+					<p>  neki tekst.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //bootstrap-modal-pop-up -->
+	<!--footer-->
+	<div class="contact-footer-w3layouts-agile">
+
+		<div class="bottom-social-agileits-w3ls">
+			<div class="container">
+				<div class="col-md-8 botttom-nav-w3ls-agileits">
+					<ul class="f_links col-md-4">
+						<li>
+							<a href="index.html">Početna</a>
+						</li>
+						<li>
+							<a href="#">O nama</a>
+						</li>
+						
+						
+						<li>
+							<a href="#">Kontakt</a>
+						</li>
+					</ul>
+					<!--<ul class="f_links col-md-4">
+						<li>
+							<a href="index.html">Topics</a>
+						</li>
+						<li>
+							<a href="404.html">Blog</a>
+						</li>
+						<li>
+							<a href="404.html">Careers</a>
+						</li>
+						<li>
+							<a href="services.html">Services</a>
+						</li>
+
+					</ul>
+					<ul class="f_links thrd col-md-4">
+						<li>
+							<a href="index.html">Topics</a>
+						</li>
+						<li>
+							<a href="404.html">Events</a>
+						</li>
+						<li>
+							<a href="app.html">Mobile App</a>
+						</li>
+
+
+					</ul>
+					-->
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-4 social-icons-wthree">
+					<h6>Connect with us</h6>
+					<a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
+					<a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
+					<a class="pinterest" href="#"><span class="fa fa-pinterest-p"></span></a>
+					<a class="linkedin" href="#"><span class="fa fa-linkedin"></span></a>
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+		</div>
+		<div class="copy-w3-agileits">
+
+			<h2 class="footer-logo"><a href="index.html">Sigurnost u saobraćaju</a></h2>
+
+			<p>© 2018 . All Rights Reserved</a> <img src ="images/logo.png" width="50px" height="50px"> </p>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!--/footer -->
+
+
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!--search-bar-->
+	<script src="js/main.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: true,
+				speed: 1000,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+	<!--//search-bar-->
+	<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+	<script src="js/easyResponsiveTabs.js"></script>
+	<!--Plug-in Initialisation-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			//Vertical Tab
+			$('#parentVerticalTab').easyResponsiveTabs({
+				type: 'vertical', //Types: default, vertical, accordion
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				tabidentify: 'hor_1', // The tab groups identifier
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#nested-tabInfo2');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+		});
+	</script>
+	<!--/script-->
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+									var defaults = {
+							  			containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+							 		};
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+
+</body>
+
+</html>
